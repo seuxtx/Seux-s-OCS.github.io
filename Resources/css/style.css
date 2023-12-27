@@ -11,6 +11,9 @@ h1{
     color: aqua;
     text-align: center;
 }
+
+
+
 /* grid */
 .grid{
     display: grid;
