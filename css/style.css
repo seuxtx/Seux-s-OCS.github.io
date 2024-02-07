@@ -11,7 +11,20 @@ h1{
     color: aqua;
     text-align: center;
 }
+a{
+    color: whitesmoke;
+}
 
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+.links p{
+    display: inline-block;
+    padding: 10px 10px;
+}
 
 
 /* grid */
@@ -178,4 +191,51 @@ p{
 
 .pokemon-grid .image:hover + .desc {
     opacity: 1;
+}
+
+
+/* draft ocs*/
+.draft-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+}
+.draft-grid .image img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.draft-grid .image:hover img {
+    transform: scale(1.1);
+}
+
+.draft-grid .desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.draft-grid .image:hover + .desc {
+    opacity: 1;
+}
+.draft-grid .Calisto,
+.draft-grid .Io,
+.draft-grid .Yoko,
+.draft-grid .ashe,
+.draft-grid .Alexia,
+.draft-grid .Jerzie,
+.draft-grid .ally,
+.draft-grid .Abby,
+.draft-grid .Rei,
+.draft-grid .Kassandra,
+.draft-grid .evie,
+.draft-grid .zoe,
+.draft-grid .Stella,
+.draft-grid .Serena,
+.draft-grid .Soldier{
+    position: relative;
+    overflow: hidden;
 }
