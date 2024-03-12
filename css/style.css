@@ -188,7 +188,7 @@ p{
     gap: 20px;
 }
 
-/* .pokemon-grid .zard,
+.pokemon-grid .zard,
 .pokemon-grid .pikachan,
 .pokemon-grid .chuu,
 .pokemon-grid .golbs,
@@ -219,7 +219,7 @@ p{
 
 .pokemon-grid .image:hover + .desc {
     opacity: 1;
-} */
+}
 
 
 /* draft ocs*/
