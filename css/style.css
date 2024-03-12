@@ -27,6 +27,16 @@ a{
     padding: 10px 10px;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add space between buttons and artist link */
+}
+
+.button-container button {
+    padding: 10px 20px; /* Adjust button padding for size */
+    font-size: 16px; /* Adjust button font size */
+}
 
 /* grid */
 .grid{
@@ -120,10 +130,15 @@ p{
 
 /* shipgirls */
 
-.shipgirls {
+/*.shipgirls {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 20px;
+}**/
+.shipgirls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .shipgirls .abyssals,
@@ -132,11 +147,15 @@ p{
     position: relative;
     overflow: hidden;
 }
+.shipgirls .image{
+    margin: 10px;
+}
 
 .shipgirls .image img {
     width: 100%;
-    height: auto;
+    height: 500px;
     transition: transform 0.3s ease-in-out;
+    object-fit: contain;
 }
 
 .shipgirls .image:hover img {
@@ -155,6 +174,12 @@ p{
 .shipgirls .image:hover + .desc {
     opacity: 1;
 }
+.shipgirls, .emma-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* pokegirls */
 
 .pokemon-grid {
