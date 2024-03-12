@@ -91,9 +91,9 @@ p{
 /* Monster girls */
 
 .monster-girls {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .monster-girls .sherman,
@@ -107,8 +107,10 @@ p{
 
 .monster-girls .image img {
     width: 100%;
-    height: auto;
+    height: 500px;
+    padding: 10px;
     transition: transform 0.3s ease-in-out;
+    object-fit: contain;
 }
 
 .monster-girls .image:hover img {
@@ -154,6 +156,7 @@ p{
 .shipgirls .image img {
     width: 100%;
     height: 500px;
+    padding: 10px;
     transition: transform 0.3s ease-in-out;
     object-fit: contain;
 }
@@ -183,9 +186,9 @@ p{
 /* pokegirls */
 
 .pokemon-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pokemon-grid .zard,
@@ -200,8 +203,10 @@ p{
 
 .pokemon-grid .image img {
     width: 100%;
-    height: auto;
+    height: 500px;
+    padding: 10px;
     transition: transform 0.3s ease-in-out;
+    object-fit: contain;
 }
 
 .pokemon-grid .image:hover img {
@@ -224,14 +229,16 @@ p{
 
 /* draft ocs*/
 .draft-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .draft-grid .image img{
     width: 100%;
-    height: auto;
+    height: 500px;
+    padding: 10px;
     transition: transform 0.3s ease-in-out;
+    object-fit: contain;
 }
 .draft-grid .image:hover img {
     transform: scale(1.1);
@@ -271,14 +278,16 @@ p{
 /*hanaki pokemon*/
 
 .poke{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .poke .image img{
     width: 100%;
-    height: auto;
+    height: 500px;
+    padding: 10px;
     transition: transform 0.3s ease-in-out;
+    object-fit: contain;
 }
 .poke .image:hover img {
     transform: scale(1.1);
