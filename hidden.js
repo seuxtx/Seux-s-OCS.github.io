@@ -1,26 +1,25 @@
-        // Variable to keep track of image state
-        var imageDisplayed = false;
+document.addEventListener("DOMContentLoaded", function() {
+    // Variable to keep track of image state
+    let imageDisplayed = false;
 
-        // JavaScript to handle button click event
-        document.getElementById('display-image-btn').addEventListener('click', function() {
-            // Specify the path of your uploaded image
-            var imageUrl = './images/Sneakgolbs.png';
+    // Button click event handler
+    document.getElementById('display-image-btn').addEventListener('click', function() {
+        // Specify the path of your uploaded image
+        const imageUrl = './images/Essara.jpg';
 
-            // Create an image element
-            var imgElement = document.createElement('img');
-            imgElement.src = imageUrl;
+        // Get the image container
+        const imageContainer = document.getElementById('image-container');
 
-            // Clear previous image if any
-            var imageContainer = document.getElementById('image-container');
+        // If the image is currently displayed, remove it
+        if (imageDisplayed) {
             imageContainer.innerHTML = '';
-
-            if (!imageDisplayed) {
-                // Append the new image element to the image container
-                imageContainer.appendChild(imgElement);
-                // Update image state
-                imageDisplayed = true;
-            } else {
-                // Reset image state
-                imageDisplayed = false;
-            }
-        });
+            imageDisplayed = false;
+        } else {
+            // If the image is not displayed, show it
+            const imgElement = document.createElement('img');
+            imgElement.src = imageUrl;
+            imageContainer.appendChild(imgElement);
+            imageDisplayed = true;
+        }
+    });
+});
